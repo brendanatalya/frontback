@@ -1,15 +1,23 @@
 ###
-GET http://localhost:3000
-
+GET http://172.16.1.42:3000
 
 ###
 POST http://localhost:3000/Alunos
 Content-Type: application/json
 
 {
-    "nome":"José",
-    "idade" :"16" 
+    "nome":"Emerson Rocha",
+    "email" : "EmersonRocha@etec.sp.gov.br" 
 }
 
 ###
-PUT http://localhost:3000/update/2
+PUT http://localhost:3000/update/1
+Content-Type: application/json
+
+{
+    "nome" : "zé pilantra",
+    "email" : "zeze@etec.sp.gov.br"
+}
+
+###
+DELETE http://172.16.1.42:3000/delete/1
