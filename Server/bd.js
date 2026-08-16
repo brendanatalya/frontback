@@ -5,6 +5,7 @@ const cn = mysql.createPool({
    host:'localhost',
    user :'root',
    password:'',
-   database:'DDM_2'  
+   database:'pam_2'  
 });
+
 module.exports = cn.promise();
